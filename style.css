@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+html
+{box-sizing: border-box}
+*
+{box-sizing: inherit}
+
+
+
+
+
+body 
+{
+  font-family: Verdana, "Berlin Sans FB", serif ;
+  font-size: 1.8em;
+ background-color: #d2dc9d; background-image: url(images/bullseye.png); margin: 2px 1.5em;
+}
+
+
+
+audio
+{margin-top: -1em; /*background-color: green*/}
+
+
+audio::-webkit-media-controls-panel
+{height: 5em;}
+
+
+@media screen and (max-width: 320px){
+
+audio::-webkit-media-controls-panel
+{height: 5em}
+
+
+}
+
+
