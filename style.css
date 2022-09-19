@@ -28,8 +28,10 @@ audio::-webkit-media-controls-panel
 
 @media screen and (max-width: 320px){
 
-audio::-webkit-media-controls-panel
-{height: 5em}
+audio{
+height: 20em; 
+width: 5em
+}
 
 
 }
