@@ -76,32 +76,21 @@ display: block;
 font-weight: bold;
 }
 
-hr {
-text-decoration: none;
+figure{
+    float: right;
 }
 
 img[src*= "images/dr.jpg"]{
-margin-right: 5px;
-float: right;
-margin-bottom: 0;
-border: 1em solid;
-border-color: #006600;
-max-width: 100%;
-}
+    border: 20px solid green;
 
-#fig {
-font-size: 1em;
-float: right;
-clear:both;
-margin-top: -2em;
-margin-left: 50em;
-margin-right: -1.3em;
+
 }
 
 
-.owner {
+.cap{
 font-family: "Lucida Handwriting";
-border-bottom: 1px double black;
+border-bottom: 3px double black;
+
 }
 
 iframe {
@@ -124,25 +113,22 @@ background-attachment: fixed;
 }
 
 
+figure{
+    float: none;
+    margin: 1em 0 2em -1em;
+}
+
 img[src*= "images/dr.jpg"]{
-margin-right: 5px;
-float: none;
-margin-bottom: 0;
-width: 170px;
-height: 170px;
-border: 18px solid;
-border-color: #006600;
+    border: 20px solid green;
+
+
 }
 
-img[src*= "images/egbaalake.jpg"]{
-width: 170px;
-height: 170px;
-}
 
-#fig {
-font-size: 20px;
-float: none;
-margin: 2em 0 0 0;
+.cap{
+font-family: "Lucida Handwriting";
+border-bottom: 3px double black;
+
 }
 
 main{
@@ -220,25 +206,21 @@ background-attachment: fixed;
 }
 
 
+figure{
+    float: right;
+}
+
 img[src*= "images/dr.jpg"]{
-margin-right: 5px;
-float: none;
-margin-bottom: 0;
-width: 170px;
-height: 170px;
-border: 18px solid;
-border-color: #006600;
+    border: 20px solid green;
+
+
 }
 
-img[src*= "images/egbaalake.jpg"]{
-width: 170px;
-height: 170px;
-}
 
-#fig {
-font-size: 20px;
-float: none;
-margin: 2em 0 0 0;
+.cap{
+font-family: "Lucida Handwriting";
+border-bottom: 3px double black;
+
 }
 
 main{
@@ -373,31 +355,21 @@ display: block;
 font-weight: bold;
 }
 
-hr {
-text-decoration: none;
+figure{
+    float: right;
 }
 
 img[src*= "images/dr.jpg"]{
-margin-right: 5px;
-float: none;
-margin-bottom: 0;
-border: 1em solid;
-border-color: #006600;
-max-width: 100%;
-}
+    border: 20px solid green;
 
-#fig {
-font-size: 1em;
-float: none;
-clear:both;
-margin-top: -2em;
-margin-left: 0;
+
 }
 
 
-.owner {
+.cap{
 font-family: "Lucida Handwriting";
-border-bottom: 1px double black;
+border-bottom: 3px double black;
+
 }
 
 iframe {
@@ -433,25 +405,21 @@ margin-top: -20px;
     }
     
     
+    figure{
+        float: right;
+    }
+    
     img[src*= "images/dr.jpg"]{
-    margin-right: 5px;
-    float: none;
-    margin-bottom: 0;
-    width: 170px;
-    height: 170px;
-    border: 18px solid;
-    border-color: #006600;
+        border: 20px solid green;
+    
+    
     }
     
-    img[src*= "images/egbaalake.jpg"]{
-    width: 170px;
-    height: 170px;
-    }
     
-    #fig {
-    font-size: 20px;
-    float: none;
-    margin: 2em 0 0 0;
+    .cap{
+    font-family: "Lucida Handwriting";
+    border-bottom: 3px double black;
+    
     }
     
     main{
