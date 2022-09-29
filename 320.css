@@ -112,8 +112,8 @@ background-attachment: fixed;
 
 
 figure{
-    float: right;
-    margin: 1em 0 2em -1em;
+    float: left;
+    margin: 0;
 }
 
 img[src*= "images/dr.jpg"]{
