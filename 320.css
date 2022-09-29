@@ -17,6 +17,20 @@ background-image: url(images/bullseye.png) /*linear-gradient(180deg, #B3DE81 90%
 background-attachment: fixed;
 }
 
+figure{
+    float: right;
+}
+
+img[src*= "images/dr.jpg"]{
+    border: 20px solid green;
+}
+
+
+figure figcaption .cap{
+font-family: "Lucida Handwriting";
+border-bottom: 1px double black;
+}
+
 
 footer{
 border-top: 1px solid #57b1dc;
@@ -76,22 +90,6 @@ display: block;
 font-weight: bold;
 }
 
-figure{
-    float: right;
-}
-
-img[src*= "images/dr.jpg"]{
-    border: 20px solid green;
-
-
-}
-
-
-.cap{
-font-family: "Lucida Handwriting";
-border-bottom: 3px double black;
-
-}
 
 iframe {
 width: 450px;
@@ -114,20 +112,18 @@ background-attachment: fixed;
 
 
 figure{
-    float: none;
+    float: right;
     margin: 1em 0 2em -1em;
 }
 
 img[src*= "images/dr.jpg"]{
     border: 20px solid green;
-
-
 }
 
 
-.cap{
+figure figcaption .caps{
 font-family: "Lucida Handwriting";
-border-bottom: 3px double black;
+border-bottom: 1px double black;
 
 }
 
