@@ -2,35 +2,30 @@
 
 html
 {box-sizing: border-box}
-*
-{box-sizing: inherit}
-
-
-
 
 
 body 
 {
   font-family: Verdana, "Berlin Sans FB", serif ;
-  font-size: 1.8em;
- background-color: #d2dc9d; background-image: url(images/bullseye.png); margin: 2px 1.5em;
+  font-size: 200%;
+  color: #194d19;
+  background-color: #e6ffe6; 
+  background-image: url(images/bullseye.png); 
+  margin: 2px 1.5em;
 }
 
 
 
 audio
-{margin-top: -1em; /*background-color: green*/}
+{margin-top: -1em;}
 
+@media (min-width: 320px) and (max-width: 425px){
+p{
+  font-size: 20em;
+}
 
-audio::-webkit-media-controls-panel
-{height: 5em;}
-
-
-@media screen and (max-width: 320px){
-
-audio{
-height: 20em; 
-width: 5em
+p audio{
+width: 400px;
 }
 
 
