@@ -9,7 +9,7 @@ html{
 }
 
 body{
-    margin: 0 3px 0 3px;
+    margin: 0 0 0 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 120%;
     font-weight: light;
@@ -29,30 +29,30 @@ a:hover{
 }
 
 
-nav{
+#header-nav{
     margin: 0 0 0 0;
     padding: 0;
     background-color: antiquewhite;
     border-bottom: 5px solid #194d19;
-    border-top: none;
 }
 
-nav ul{
+.container, #collapsable-nav{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+#nav-list{
+    text-align: end;
     list-style-type: none;
     display: flex;
     align-items: center;
-    padding: 0 .5em;
-    margin: 0 0 0 0;
+    padding: .5em  0;
+    margin: 1em 0 1em 0;
     font-size: 1.2em;
 }
 
-nav ul li.logo{
-    margin-right: auto;
-    border: none;
-    display: inline;
-}
 
-nav ul li a, p a{
+#nav-list li a, p a{
     margin: 0 1em;
     color: #194d19;
     border: 3px solid #194d19;
@@ -60,13 +60,19 @@ nav ul li a, p a{
     padding: 10px;
 }
 
-nav ul li a:hover, p a:hover{
+#nav-list li a:hover, p a:hover{
      text-decoration: underline;
      color: #0c4;
      border-color: #0c4;
 }
 
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+    border: 1px solid #194d19;
+}
+
 img[src*= "images/egbaalake.jpg"]{
+    margin-right: auto;
+    float: left;
     width: 120px;
     height: 120px;
 }
@@ -129,7 +135,7 @@ footer a:hover{
 
 @media (min-width: 320px) and (max-width: 562px) {
     body{
-        margin: 0 3px 0 1em;
+        margin: 0 0 0 0;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-size: 16px;
         font-weight: light;
@@ -137,9 +143,40 @@ footer a:hover{
         color: #194d19;
         background-image: url(images/bullseye.png);
     }
+
+    #header-nav{
+        margin: 0 0 0 0;
+        padding: 0;
+        background-color: antiquewhite;
+        border-bottom: 5px solid #194d19;
+    }
+
+    #nav-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
+        display: block;
+        align-items: center;
+        padding: .5em  0;
+        margin: 1em 0 1em 0;
+        font-size: 1.2em;
+    }
+
+    #nav-list li a{
+     text-align: center;
+     margin: 5px 0;
+    }
+
+    img[src*= "images/egbaalake.jpg"]{
+        margin-right: auto;
+        width: 120px;
+        height: 120px;
+    }
+
     figure{
         float: none;
-        margin: 1em 0 0 1px;
+        margin: 1em 0 0 5px;
     }
     
     figcaption{
@@ -163,8 +200,7 @@ footer a:hover{
     article{
         font-size: 29px;
         clear: left;
-        margin: 0 5px 0 5px;
-        width: 340px;
+        margin: 0 7px 0 5px;
     }
 
     p{
