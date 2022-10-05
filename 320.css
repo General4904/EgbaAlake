@@ -11,11 +11,12 @@ html{
 body{
     margin: 0 0 0 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 120%;
+    font-size: 100%;
     font-weight: light;
     background-color: #e6ffe6;
     color: #194d19;
     background-image: url(images/bullseye.png);
+    background-attachment: fixed;
 }
 
 a:link{
@@ -26,6 +27,14 @@ a:link{
 a:hover{
     text-decoration: underline;
     color: #0c4;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin: 0;
 }
 
 
@@ -41,13 +50,13 @@ a:hover{
     padding: 0 0 0 0;
 }
 
+li.logo{
+    margin-right: 0; 
+}
+
 #nav-list{
-    text-align: end;
-    list-style-type: none;
-    display: flex;
-    align-items: center;
     padding: .5em  0;
-    margin: 1em 0 1em 0;
+    margin:  0 1em;
     font-size: 1.2em;
 }
 
@@ -75,6 +84,11 @@ img[src*= "images/egbaalake.jpg"]{
     float: left;
     width: 120px;
     height: 120px;
+}
+
+.news{
+    width: 15em;
+    height: 10em;
 }
 
 
@@ -113,15 +127,25 @@ article{
 }
 
 p{
-    margin: 6em 0 0 0;
+    margin: 1em 0 1em 0;
+    text-align: center;
+    font-size: 32px;
+}
+
+p a{
+    margin: 0 0 0 0;
+}
+
+section{
     text-align: center;
 }
 
 
 iframe{
-    width: 20em;
-    height: 20em;
-    border: 12px solid #194d19
+    width: 30em;
+    height: 30em;
+    border: 12px solid #194d19;
+    margin: 0 0 0 0;
 }
 
 footer img{
@@ -137,7 +161,7 @@ footer a:hover{
     body{
         margin: 0 0 0 0;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 16px;
+        font-size: 100%;
         font-weight: light;
         background-color: #e6ffe6;
         color: #194d19;
@@ -189,6 +213,11 @@ footer a:hover{
 
     main{
         margin: 0 0 0 .1em;
+        font-size: 5px;
+    }
+
+    button{
+        margin: 0 0 0 0;
     }
     
     .owner{
@@ -198,7 +227,7 @@ footer a:hover{
     }
 
     article{
-        font-size: 29px;
+        font-size: 19px;
         clear: left;
         margin: 0 7px 0 5px;
     }
@@ -206,10 +235,21 @@ footer a:hover{
     p{
         margin: 3em 0 2em 0;
         text-align: center;
+        font-size: 19px;
+        margin: 1em;
     }
 
     audio{
         width: 250px;
+
+    }
+
+    h2, audio{
+        margin: 0 7px 1em 5px;
+    }
+
+    button{
+        margin: 0 0 0 0;
     }
 
     iframe{
@@ -235,6 +275,7 @@ footer a:hover{
         background-color: #e6ffe6;
         color: #194d19;
         background-image: url(images/bullseye.png);
+        background-attachment: fixed;
     }
     
     a:link{
@@ -293,24 +334,24 @@ footer a:hover{
     
     main{
         position: relative;
-        margin: 1em 1.5em;
+        margin: 0 0 0 0;
     }
     
     img[src*= "images/DR.JPG"]{
-        width: 190px;
-        height: 190px;
+        width: 170px;
+        height: 170px;
         border: 12px solid #194d19;
         padding: 0;
-        margin: 0 0 0 5px;
+        margin: 0 0 0 2px;
     }
     
     figure{
         float: right;
-        margin: 0 0 0 1px;
+        margin: 0 2em 0 0;
     }
     
     figcaption{
-        font-size: 20px;
+        font-size: 17px;
     }
     
     .owner{
@@ -320,7 +361,7 @@ footer a:hover{
     }
     
     article{
-        font-size: 32px;
+        font-size: 25px;
         clear: left;
         margin: 0 0 0 5px;
     }
@@ -328,8 +369,12 @@ footer a:hover{
     p{
         margin: 6em 0 0 0;
         text-align: center;
+        font-size: 20px
     }
     
+    audio, h2{
+        margin: 0 0 0 5px;
+    }
     
     iframe{
         width: 20em;

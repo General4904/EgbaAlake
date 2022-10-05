@@ -16,16 +16,15 @@ body
 
 
 
-audio
-{margin-top: -1em;}
-
-@media (min-width: 320px) and (max-width: 425px){
-p{
-  font-size: 20em;
+audio{
+margin-top: -1em;
+width: 300px;
 }
 
-p audio{
-width: 400px;
+@media (min-width: 320px) and (max-width: 562px) {
+
+audio{
+width: 500px;
 }
 
 
