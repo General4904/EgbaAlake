@@ -29,97 +29,48 @@ a:hover{
     color: #0c4;
 }
 
-nav ul{
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    margin: 0;
-}
-
-
+/*HEADER*/
 #header-nav{
-    margin: 0 0 0 0;
-    padding: 0;
-    background-color: antiquewhite;
-    border-bottom: 5px solid #194d19;
+	background-color: antiquewhite;
+	border-radius: 0;
+	border-bottom: 5px solid #194d19; 
 }
 
-.container, #collapsable-nav{
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-}
-
-li.logo{
-    margin-right: auto; 
-}
-
-#nav-list{
-    padding: .5em  0;
-    margin:  0 1em;
-    font-size: 1.2em;
-}
-
-
-#nav-list li a, p a{
-    margin: 0 1em;
-    color: #194d19;
-    border: 3px solid #194d19;
-    border-radius: 6px;
-    padding: 10px;
-}
-
-#nav-list li a:hover, p a:hover{
-     text-decoration: underline;
-     color: #0c4;
-     border-color: #0c4;
-}
-
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
-    border: 1px solid #194d19;
+.container{
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
 }
 
 img[src*= "images/egbaalake.jpg"]{
-    margin-right: auto;
-    float: left;
-    width: 120px;
-    height: 120px;
+        /*margin-right: auto;*/
+        float: left;
+        width: 120px;
+        height: 120px;
 }
 
-.news{
-    width: 15em;
-    height: 10em;
+#nav-list{
+	margin: 2em -62em 0 0;
 }
 
-
-main{
-    position: relative;
-    margin: 1em 1.5em;
+#nav-list a{
+   color: #194d19;
+   font-size: 25px;
+   border: 3.9px solid #194d19;
+   border-radius: 7px;
+   margin: 0 .2em;
 }
 
-img[src*= "images/DR.JPG"]{
-    width: 190px;
-    height: 190px;
-    border: 12px solid #194d19;
-    padding: 0;
-    margin: 0 0 0 5px;
+#nav-list a:hover{
+	color: #38ad38;
+	border-color: #38ad38;
+	text-decoration: underline;
 }
 
-figure{
-    float: right;
-    margin: 0 0 0 1px;
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+	border: 2px solid #194d19;
 }
 
-figcaption{
-    font-size: 20px;
-}
-
-.owner{
-    font-family: 'Lucida Handwriting', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, 
-                  Verdana, sans-serif;
-    border-bottom: 1px double #194d19;
-}
-
+/* Main Contents */
 article{
     font-size: 32px;
     clear: left;
@@ -134,6 +85,16 @@ p{
 
 p a{
     margin: 0 0 0 0;
+    color: #194d19;
+    border: 3.9px solid #194d19;
+   border-radius: 7px;
+   padding: 9px 9px;
+}
+
+p a:hover{
+	color: #38ad38;
+	border-color: #38ad38;
+	text-decoration: underline;
 }
 
 section{
@@ -168,67 +129,21 @@ footer a:hover{
         background-image: url(images/bullseye.png);
     }
 
-    #header-nav{
-        margin: 0 0 0 0;
-        padding: 0;
-        background-color: antiquewhite;
-        border-bottom: 5px solid #194d19;
-    }
-
     #nav-list{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        list-style-type: none;
-        display: block;
-        align-items: center;
-        padding: .5em  0;
-        margin: 1em 0 1em 0;
-        font-size: 1.2em;
-    }
+	margin: 0 0 0 0;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
 
-    #nav-list li a{
-     text-align: center;
-     margin: 5px 0;
-    }
+#nav-list li{
+	margin: 3px 0; 
+	display: block;
+}
 
-    img[src*= "images/egbaalake.jpg"]{
-        margin-right: auto;
-        width: 120px;
-        height: 120px;
-    }
-
-    figure{
-        float: none;
-        margin: 1em 0 0 5px;
-    }
     
-    figcaption{
-        font-size: 20px;
-    }
-
-    h1{
-        margin: 21px 0 10px 0;
-    }
-
-    main{
-        margin: 0 0 0 .1em;
-        font-size: 5px;
-    }
-
-    button{
-        margin: 0 0 0 0;
-    }
-    
-    .owner{
-        font-family: 'Lucida Handwriting', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, 
-                      Verdana, sans-serif;
-        border-bottom: 1px double #194d19;
-    }
-
     article{
         font-size: 19px;
-        clear: left;
         margin: 0 7px 0 5px;
     }
 
@@ -239,6 +154,11 @@ footer a:hover{
         margin: 1em;
     }
 
+    .news{
+    	width: 300px;
+    	height: 200px;
+    }
+
     audio{
         width: 250px;
 
@@ -246,10 +166,6 @@ footer a:hover{
 
     h2, audio{
         margin: 0 7px 1em 5px;
-    }
-
-    button{
-        margin: 0 0 0 0;
     }
 
     iframe{
@@ -287,89 +203,21 @@ footer a:hover{
         text-decoration: underline;
         color: #0c4;
     }
-    
-    
-    #header-nav{
-        margin: 0 0 0 0;
-        padding: 0;
-        background-color: antiquewhite;
-        border-bottom: 5px solid #194d19;
-    }
+
 
     #nav-list{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        list-style-type: none;
-        display: block;
-        align-items: center;
-        padding: .5em  0;
-        margin: 1em 0 1em 0;
-        font-size: 1.2em;
-    }
-
-    #nav-list li a{
-     text-align: center;
-     margin: 5px 0;
-    }
+	margin: 1em 0 0 0;
+}
     
-    nav ul li.logo{
-        margin-right: auto;
-        border: none;
-        display: inline;
+    .news{
+    	width: 600px;
+    	height: 400px;
     }
-    
-    nav ul li a, p a{
-        margin: 0 1em;
-        color: #194d19;
-        border: 3px solid #194d19;
-        border-radius: 6px;
-        padding: 10px;
-    }
-    
-    nav ul li a:hover, p a:hover{
-         text-decoration: underline;
-         color: #0c4;
-         border-color: #0c4;
-    }
-    
-    img[src*= "images/egbaalake.jpg"]{
-        width: 120px;
-        height: 120px;
-    }
-    
-    
-    main{
-        position: relative;
-        margin: 0 0 0 0;
-    }
-    
-    img[src*= "images/DR.JPG"]{
-        width: 170px;
-        height: 170px;
-        border: 12px solid #194d19;
-        padding: 0;
-        margin: 0 0 0 2px;
-    }
-    
-    figure{
-        float: right;
-        margin: 0 2em 0 0;
-    }
-    
-    figcaption{
-        font-size: 17px;
-    }
-    
-    .owner{
-        font-family: 'Lucida Handwriting', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, 
-                      Verdana, sans-serif;
-        border-bottom: 1px double #194d19;
+       
     }
     
     article{
         font-size: 25px;
-        clear: left;
         margin: 0 0 0 5px;
     }
     
@@ -400,4 +248,3 @@ footer a:hover{
     
     
 } 
- 
