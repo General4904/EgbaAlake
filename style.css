@@ -1,33 +1,200 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 
-html
-{box-sizing: border-box}
+body{
+    margin: 0 0 0 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    background-color: #e6ffe6;
+    color: #194d19;
+    background-image: url(images/bullseye.png);
+    background-attachment: fixed;
+}
 
+a:link{
+    text-decoration: none;
+    color: #194d19;
+}
 
-body 
-{
-  font-family: Verdana, "Berlin Sans FB", serif ;
-  font-size: 200%;
-  color: #194d19;
-  background-color: #e6ffe6; 
-  background-image: url(images/bullseye.png); 
-  margin: 2px 1.5em;
+a:hover{
+    text-decoration: underline;
+    color: #0c4;
+}
+
+/*HEADER*/
+#header-nav{
+	background-color: antiquewhite;
+	border-radius: 0;
+	border-bottom: 6px solid #194d19; 
 }
 
 
+#logo{
+    height: 120px;
+    width: 120px;
+    float: left;
+}
 
-audio{
-margin-top: -1em;
-width: 300px;
+.navbar-brand h1{
+    text-shadow: 1px 1px 1px gray;
+    font-size: 50px;
+    font-weight: bolder;
+    margin: 0 0 0 0;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus{
+    text-decoration: none; 
+    color: #194d19;
+}
+
+#nav-list a{
+    color: #194d19;
+    border: 3px solid #194d19;
+    margin: 3px 3px 3px 3px; 
+    border-radius: 6px
+}
+
+#nav-list a:hover, #nav-list a:focus{
+    text-decoration: underline;
+    color: #0c4;
+    border: 4px solid #0c4;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+    border: 1px solid #194d19;
+}
+
+.navbar-header button.navbar-toggle{
+    margin: -30px 0 0 0;
+    padding: 6px;
+    clear: both;
+
+}
+
+.navbar-header .icon-bar{
+    width: 15px;
+}
+
+/*
+
+
+
+/* Main Contents */
+article{
+    font-size: 32px;
+    clear: left;
+    margin: 0 0 0 .5em;
+}
+
+#panel{
+    margin: 1em 0 1em 0;
+    text-align: center;
+    font-size: 32px;
+}
+
+#panel a{
+    margin: 0 0 0 0;
+    color: #194d19;
+    border: 3.9px solid #194d19;
+   border-radius: 7px;
+   padding: 9px 9px;
+}
+
+#panel a:hover{
+	color: #38ad38;
+	border-color: #38ad38;
+	text-decoration: underline;
+}
+
+section{
+    text-align: center;
+}
+
+audio, h2{
+    margin: 0 0 0 .5em;
+}
+
+
+iframe{
+    width: 30em;
+    height: 25em;
+    border: 12px solid #194d19;
+    margin: 0 0 0 0;
+}
+
+footer img{
+    width: 40px;
+    height: 40px;
+}
+
+footer a:hover{
+    text-decoration: none;
+}
+
+/****NEWS SECTION***/
+.news{
+    width: 600px;
 }
 
 @media (min-width: 320px) and (max-width: 562px) {
-
-audio{
-width: 500px;
+body{
+    margin: 0 0 0 0;
 }
 
+.navbar-brand h1{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 0 0 0;
+}
+
+article{
+    font-size: 20px;
+    margin: 0 0 0 0;
+}
+
+#panel{
+  font-size: 20px;
+  margin: 1em 0 1em 0; 
+}
+
+p{
+    font-size: 20px
+}
+
+iframe{
+    width: 15em;
+    height: 15em;
+    border: 12px solid #194d19;
+    margin: 0 0 0 0;
+}
+
+#collapsable-nav ul{
+    flex-direction: column;
+    margin: 2px 0 0 0;
+}
+
+#collapsable-nav ul a{
+    display: block;
+    text-align: center;
+}
+
+.news{
+    width: 300px 
+}
 
 }
 
+@media (min-width: 563px) and (max-width: 1000px) {
+.news{
+    width: 450px; 
+}
 
+.navbar-brand h1{
+    font-size: 45px;
+    margin-top: -15px
+}
+
+p{
+    font-size: 25px;
+}
+
+}
