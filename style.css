@@ -74,13 +74,19 @@ a:hover{
     width: 15px;
 }
 
-/*
-
+h2{
+    font-weight: bolder;
+    text-decoration: underline;
+}
 
 
 /* Main Contents */
-article{
+p{
     font-size: 32px;
+}
+
+article{
+    font-size: 25px;
     clear: left;
     margin: 0 0 0 .5em;
 }
@@ -105,6 +111,12 @@ article{
 	text-decoration: underline;
 }
 
+section ul li{
+    text-align: left;
+    font-size: 25px;
+    margin: 0 0 2em 0;
+}
+
 section{
     text-align: center;
 }
@@ -114,11 +126,24 @@ audio, h2{
 }
 
 
-iframe{
+/* iframe{
     width: 30em;
     height: 25em;
     border: 12px solid #194d19;
     margin: 0 0 0 0;
+} */
+
+figure{
+    float: right;
+    margin: 0 0 1em 1em;
+    padding: 0;
+    border: 3px solid #194d19;
+    border-radius: 6px;
+}
+
+figcaption{
+    text-decoration: underline;
+    text-align: center;
 }
 
 footer img{
@@ -146,6 +171,20 @@ body{
     margin: 0 0 0 0;
 }
 
+h2{
+    font-size: 27px;
+}
+
+#olokun{
+    width: 80px;
+    height: 90px;
+    /* display: none; */
+}
+
+section ul li{
+    font-size: 19px;
+}
+
 article{
     font-size: 20px;
     margin: 0 0 0 0;
@@ -160,12 +199,18 @@ p{
     font-size: 20px
 }
 
-iframe{
+article {
+    font-size: 16px;
+    clear: left;
+    margin: 0 0 0 .5em;
+}
+
+/* iframe{
     width: 15em;
     height: 15em;
     border: 12px solid #194d19;
     margin: 0 0 0 0;
-}
+} */
 
 #collapsable-nav ul{
     flex-direction: column;
