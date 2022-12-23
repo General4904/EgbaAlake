@@ -81,6 +81,10 @@ h2{
 
 
 /* Main Contents */
+main{
+    margin: 0 0 0 .5em;
+}
+
 p{
     font-size: 32px;
 }
@@ -160,6 +164,28 @@ footer a:hover{
     width: 600px;
 }
 
+/****Today History Section****/
+#grid{
+    display: grid;;
+    grid-template-columns: 1000px 50px;
+}
+
+#left{
+    grid-column-start: 1;
+    grid-column-end:  2;
+}
+
+#grid ul{
+    padding: 0 0 0 0;
+
+}
+
+#grid section{
+    margin: 0 0 0 .5em;
+}
+
+   /********************* Small Devices************************* */
+
 @media (min-width: 150px) and (max-width: 562px) {
 body{
     margin: 0 0 0 0;
@@ -227,7 +253,14 @@ article {
     width: 300px 
 }
 
+#grid {
+    display: block;
+    grid-template-columns: 1000px 50px;
 }
+
+}
+
+/****************Medium Devices*****************/
 
 @media (min-width: 563px) and (max-width: 1000px) {
 .news{
@@ -246,6 +279,11 @@ p{
 #collapsable-nav ul a{
     display: block;
     text-align: center;
+}
+
+#grid {
+    display: block;
+    grid-template-columns: 1000px 50px;
 }
 
 }
