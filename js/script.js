@@ -1,5 +1,10 @@
-// const date = new Date();
+let clock = document.getElementById("time");
 
-// let displayDate = document.getElementById("time");
-// displayDate.innerHTML = date
+setInterval(() =>{
+    let x = new Date();
 
+
+    clock.innerHTML = x.toLocaleDateString() + "  |  " + x.toLocaleTimeString()
+}, 1000)
+
+ 
