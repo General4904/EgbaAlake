@@ -237,6 +237,10 @@ article {
 		margin: 0 0 0 0;
 	}
 
+	#header-nav {
+		position: sticky;
+	}
+
 	#time {
 		font-size: 1.5em;
 		font-weight: bolder;
@@ -328,6 +332,10 @@ article {
 @media (min-width: 563px) and (max-width: 1000px) {
 	.news {
 		width: 450px;
+	}
+
+	#header-nav {
+		position: sticky;
 	}
 
 	.navbar-brand h1 {
