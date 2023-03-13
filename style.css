@@ -30,7 +30,6 @@ a:hover {
 #header-nav {
 	background-image: url(images/header_bg5.jpg);
 	background-repeat: no-repeat;
-	height: 9em;
 	background-color: antiquewhite;
 	border-radius: 0;
 	border-bottom: 6px solid #194d19;
@@ -53,6 +52,10 @@ a:hover {
 .navbar-brand a:focus {
 	text-decoration: none;
 	color: #194d19;
+}
+
+#navlist {
+	margin: 2em;
 }
 
 #nav-list a {
