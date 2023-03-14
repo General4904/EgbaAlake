@@ -9,7 +9,7 @@ body {
 	margin: 0 0 0 0;
 	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
 		"Lucida Sans", Arial, sans-serif;
-	font-size: 16px;
+	font-size: 17px;
 	background-color: #e6ffe6;
 	color: #194d19;
 	background-image: url(images/bullseye.png);
@@ -42,8 +42,9 @@ a:hover {
 }
 
 .navbar-brand h1 {
+	float: right;
 	text-shadow: 1px 1px 1px gray;
-	font-size: 50px;
+	font-size: 40px;
 	font-weight: bolder;
 	margin: 0 0 0 0;
 }
@@ -54,14 +55,12 @@ a:hover {
 	color: #194d19;
 }
 
-#navlist {
-	margin: 2em;
-}
-
 #nav-list a {
+	font-size: 16px;
 	color: #194d19;
-	border: 3px solid #194d19;
+	border: 2px solid #194d19;
 	margin: 3px 3px 3px 3px;
+	padding: 6px 10px;
 	border-radius: 6px;
 }
 
@@ -70,6 +69,7 @@ a:hover {
 	text-decoration: underline;
 	color: #0c4;
 	border: 4px solid #0c4;
+	box-shadow: 2px 2px 2px gray;
 }
 
 .navbar-header button.navbar-toggle,
@@ -88,14 +88,16 @@ a:hover {
 }
 
 h2 {
+	font-size: 22px;
 	font-weight: bolder;
 	text-decoration: underline;
 }
 
 /***Time**/
 #time {
+	margin: 0;
 	text-align: center;
-	font-size: 2em;
+	font-size: 1.5em;
 	font-weight: bolder;
 	font-style: italic;
 }
@@ -103,14 +105,14 @@ h2 {
 /* Main Contents */
 
 #intro {
-	margin: 2em 0.5em;
-	font-size: 22px;
+	margin: 1em 0.5em;
+	/* font-size: 22px; */
 }
 
 #panel {
 	margin: 0.8em 0;
 	text-align: center;
-	font-size: 30px;
+	font-size: 20px;
 }
 
 #panel a {
@@ -119,6 +121,7 @@ h2 {
 	border: 3.9px solid #194d19;
 	border-radius: 7px;
 	padding: 9px 9px;
+	box-shadow: 2px 2px 2px gray;
 }
 
 #panel a:hover {
@@ -132,7 +135,7 @@ h2 {
 }
 
 #monument p {
-	font-size: 22px;
+	/* font-size: 22px; */
 	clear: right;
 }
 
@@ -146,10 +149,6 @@ h2 {
 	margin: 2em 0.5em;
 }
 
-#history {
-	font-size: 22px;
-}
-
 #history ul {
 	margin: 1em;
 	list-style-type: none;
@@ -160,6 +159,16 @@ h2 {
 	padding: 5px;
 	border: 1px solid #194d19;
 	border-radius: 6px;
+}
+
+ul#library {
+	margin: 1em;
+	list-style-type: none;
+}
+
+ul#headlines {
+	margin: 1em;
+	list-style-type: none;
 }
 
 footer {
@@ -237,12 +246,13 @@ article {
 		margin: 0 0 0 0;
 	}
 
-	#header-nav {
+	header {
 		position: sticky;
 	}
 
 	#time {
-		font-size: 1.5em;
+		font-size: 17px;
+		margin: 0 0 1em 0;
 		font-weight: bolder;
 		font-style: italic;
 	}
@@ -261,24 +271,27 @@ article {
 		font-size: 19px;
 	}
 
-	article {
-		font-size: 20px;
-		margin: 0 0 0 0;
-	}
-
 	#panel {
 		font-size: 20px;
 		margin: 1em 0 1em 0;
 	}
 
-	p {
-		font-size: 20px;
+	ul#library {
+		margin: 0 0 0 5px;
+		list-style-type: none;
 	}
 
-	article {
+	ul#headlines {
+		margin: 0 5px;
+		list-style-type: none;
+	}
+
+	audio {
+		height: 32px;
+	}
+
+	p {
 		font-size: 16px;
-		clear: left;
-		margin: 0 0 0 0.5em;
 	}
 
 	#collapsable-nav ul {
@@ -298,7 +311,7 @@ article {
 	footer {
 		background-color: #194d19;
 		color: #e6ffe6;
-		font-size: 22px;
+		font-size: 16px;
 	}
 
 	footer ul {
@@ -314,7 +327,7 @@ article {
 	}
 
 	#info {
-		padding: 1em 1em;
+		padding: 5px;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -322,8 +335,8 @@ article {
 
 	.social {
 		margin: 0;
-		height: 50px;
-		width: 50px;
+		height: 20px;
+		width: 20px;
 	}
 }
 
@@ -334,28 +347,49 @@ article {
 		width: 450px;
 	}
 
-	#header-nav {
+	header {
 		position: sticky;
 	}
 
 	.navbar-brand h1 {
-		font-size: 45px;
+		font-size: 35px;
 		margin-top: -15px;
 	}
 
 	p {
-		font-size: 25px;
+		font-size: 20px;
+	}
+
+	#time {
+		font-size: 22px;
+		margin: 0 0 1em 0;
+		font-weight: bolder;
+		font-style: italic;
 	}
 
 	#collapsable-nav ul a {
 		display: block;
 		text-align: center;
+		list-style-type: none;
+	}
+
+	ul#library {
+		margin: 0 0 0 10px;
+	}
+
+	ul#headlines {
+		margin: 0 5px;
+		list-style-type: none;
+	}
+
+	audio {
+		height: 40px;
 	}
 
 	footer {
 		background-color: #194d19;
 		color: #e6ffe6;
-		font-size: 22px;
+		font-size: 16px;
 	}
 
 	footer ul {
@@ -375,12 +409,11 @@ article {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		/* align-items: center; */
 	}
 
 	.social {
 		margin: 0;
-		height: 50px;
-		width: 50px;
+		height: 20px;
+		width: 20px;
 	}
 }
