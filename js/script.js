@@ -10,4 +10,4 @@ setInterval(() => {
 
 let version = document.getElementById("copy");
 
-version.innerHTML = "<small> &copy; 2022 - v2.4.0 </small>";
+version.innerHTML = "<small> &copy; 2022 - v2.5.0 </small>";
